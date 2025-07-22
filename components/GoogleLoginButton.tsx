@@ -13,13 +13,13 @@ export default function GoogleLoginButton() {
   const router = useRouter();
 
   useEffect(() => {
-    if (window.google && googleButtonRef.current) {
-      window.google.accounts.id.initialize({
+    if ((window as any).google && googleButtonRef.current) {
+      (window as any).google.accounts.id.initialize({
         client_id: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!,
         callback: handleCredentialResponse,
       });
 
-      window.google.accounts.id.renderButton(googleButtonRef.current, {
+      (window as any).google.accounts.id.renderButton(googleButtonRef.current, {
         theme: "outline",
         size: "large",
       });

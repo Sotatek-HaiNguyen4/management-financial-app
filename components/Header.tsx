@@ -2,13 +2,11 @@
 
 import { getProfile } from "@/services/userService";
 import { useState, useRef, useEffect } from "react";
-import { App } from "antd";
 import Image from "next/image";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const { message } = App.useApp();
   const [infoUser, setInfoUser] = useState<{
     name: string;
     avatar: string | null;
