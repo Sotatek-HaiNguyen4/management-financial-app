@@ -35,9 +35,15 @@ export default function RootLayout({
         <meta name="theme-color" content="#1890ff" />
         <link rel="icon" href="/icons/icon-192x192.png" />
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        <script
+          src="https://accounts.google.com/gsi/client"
+          async
+          defer
+        ></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // cz-shortcut-listen="true"
       >
         <AntdProvider>{children}</AntdProvider>
       </body>

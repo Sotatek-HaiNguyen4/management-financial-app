@@ -12,8 +12,10 @@
     "@ant-design/icons": "5.x",
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "antd": "^5.26.5",
+    "axios": "^1.10.0",
     "dayjs": "^1.11.13",
     "next": "15.4.2",
+    "next-auth": "^4.24.11",
     "next-pwa": "^5.6.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
